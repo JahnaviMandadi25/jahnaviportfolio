@@ -9,7 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #FFFFFF; /* Pastel pink background */
+  background-color: #FFFFFF;
 }
 
 html {
@@ -27,9 +27,9 @@ p {
   border: 2px solid #ccc;
 }
 
-/* HEADER & FOOTER WITH PRIDE PASTEL COLORS */
+/* HEADER & FOOTER */
 header, footer {
-  background: linear-gradient(90deg, #ffccd5, #ffecb3, #fff5ba, #ccffcc, #cce5ff, #e5ccff);
+  background: linear-gradient(90deg, #ffccd5, #ffecb3, #fff9cc, #ccffcc, #cce5ff, #e5ccff);
   padding: 1rem;
   text-align: center;
   color: black;
@@ -48,13 +48,7 @@ footer p {
   font-size: 1rem;
 }
 
-/* TRANSITION */
-a,
-.btn {
-  transition: all 300ms ease;
-}
-
-/* DESKTOP NAV */
+/* NAVIGATION */
 nav,
 .nav-links {
   display: flex;
@@ -64,7 +58,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-  background: none; /* Transparent since header gradient is already colorful */
+  background: none;
 }
 
 .nav-links {
@@ -421,11 +415,11 @@ article .icon {
 
 /* FOOTER SECTION */
 footer {
-  width: 100%; /* Ensure the footer takes up the full width */
+  width: 100%;
   padding: 1rem;
-  background: linear-gradient(90deg, #ffccd5, #ffedcc, #fff9cc, #e0ffcc, #ccfff0, #ccdfff, #e5ccff); /* Keep the gradient background */
+  background: linear-gradient(90deg, #ffccd5, #ffedcc, #fff9cc, #e0ffcc, #ccfff0, #ccdfff, #e5ccff);
   text-align: center;
-  margin: 0; /* Remove any default margin */
+  margin: 0;
 }
 
 .nav-links-container {
@@ -455,11 +449,6 @@ footer {
   margin-top: 1rem;
   font-size: 0.875rem;
   color: #555;
-}
-
-
-footer p {
-  text-align: center;
 }
 
 .background-image {
@@ -506,6 +495,10 @@ footer p {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+  }
+
+  section {
+    margin: 0 2rem; /* Reduce margin for smaller screens */
   }
 
   .section-container {
@@ -568,6 +561,12 @@ footer p {
 
   .hamburger-icon {
     margin: 1rem;
+  }
+
+  /* Adjust footer links for mobile */
+  footer .nav-links li {
+    display: block;
+    margin: 1rem 0;
   }
 }
 
